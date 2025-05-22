@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="30dp"
+    tools:context=".secondActivity">
+<EditText
+    android:id="@+id/etNames"
+    android:hint="First Name"
+    android:layout_width="250dp"
+    android:layout_height="50dp" />
+
+    <EditText
+        android:id="@+id/lastName"
+        android:hint="Last Name"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/etNames" />
+
+    <EditText
+        android:id="@+id/gender"
+        android:hint="gender"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/lastName" />
+    <EditText
+        android:id="@+id/txtage"
+        android:hint="Age"
+        android:inputType="number"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/gender" />
+
+
+    <Button
+        android:id="@+id/btnadd"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:text="Add"
+        android:layout_toRightOf="@+id/etNames"
+        android:layout_toEndOf="@id/etNames" />
+    <Button
+        android:id="@+id/btndelete"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:text="Delete"
+        android:layout_below="@id/btnadd"
+        android:layout_toRightOf="@+id/lastName"
+        android:layout_toEndOf="@id/lastName" />
+
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:text="Update"
+        android:layout_below="@id/btndelete"
+        android:layout_toRightOf="@+id/lastName"
+        android:layout_toEndOf="@id/lastName" />
+
+    <Button
+        android:id="@+id/btnView"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:text="View"
+        android:layout_below="@id/btnUpdate"
+        android:layout_toRightOf="@+id/lastName"
+        android:layout_toEndOf="@id/lastName" />
+
+    <ListView
+
+        android:id="@+id/names"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/txtage"
+         />
+</RelativeLayout>
